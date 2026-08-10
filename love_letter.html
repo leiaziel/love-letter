@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Letter For You ❤️</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, #ffd6e7, #fff0f5);
+            overflow: hidden;
+        }
+
+        .hearts span {
+            position: fixed;
+            color: #ff6b9a;
+            font-size: 25px;
+            animation: float 6s linear infinite;
+            bottom: -50px;
+        }
+
+        .hearts span:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .hearts span:nth-child(2) { left: 30%; animation-delay: 2s; }
+        .hearts span:nth-child(3) { left: 50%; animation-delay: 4s; }
+        .hearts span:nth-child(4) { left: 70%; animation-delay: 1s; }
+        .hearts span:nth-child(5) { left: 90%; animation-delay: 3s; }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .letter {
+            width: 90%;
+            max-width: 600px;
+            background: #fffafc;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            animation: appear 1.5s ease;
+            position: relative;
+            z-index: 2;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #e75480;
+            margin-bottom: 25px;
+        }
+
+        p {
+            color: #555;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: left;
+        }
+
+        .heart {
+            font-size: 50px;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .signature {
+            text-align: right;
+            margin-top: 30px;
+            color: #e75480;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hearts">
+        <span>❤️</span>
+        <span>💗</span>
+        <span>💕</span>
+        <span>💖</span>
+        <span>❤️</span>
+    </div>
+
+    <div class="letter">
+
+        <div class="heart">❤️</div>
+
+        <h1>To My Love</h1>
+
+        <p>
+            My love,
+        </p>
+
+        <p>
+             Happy 26 months of love dada ko! I'm very much happy to celebrate this another month with you. This time masasabi ko na talaga na we've been through a lot, pero alam ko din na marami pa tayong pagsasamahan, iiyakan at isusurvive ng magkasama. Marami na nagbago satin simula first year until ngayon na fourth year na tayo, priorities change, pressure is on, but I hope na hindi mo kalimutan na you always have me, mahirap mag adjust sa changes but I'll make sure that I'll adapt to it, and so you are, alam ko na kakayanin mo yun kasi ikaw na yan eh :)
+        </p>
+
+        <p>
+            Also, kasabay ng changes na yun, alam ko na magiging busy na tayo, lalo na ikaw. Malaki din ang possibility na mawalan ka ng time sakin or less na yung mabigay mo na attention, but I want to express what I really felt bebe. Kung dumating man yung oras, araw, at panahon na mangyari yun, gusto ko sana na ipriority mo yung dreams na lagi mong sinasabi sakin, don't ever hold back just because of me. Do what you think will make you benefit more, gaya nung ginawa mo nung pilian ng assistant sa research. Alam kong nasabi mo na sakin yun before hindi man directly na ganon yung thought pero if magkakaron man nga ng pilian na ganon eh 1,2,3 go kanya kanya na talaga HAHAHA. Pero anyways, nung pilian nakita ko na nahirapan ka talaga if sino pipiliin mo, kung ako ba or si law, but I'm so glad na pinili mo si law. Alam ko kasi kung gano mo sya  kagusto maka group and alam ko din na malaki mahehelp nya sayo to survive research, which is one of the requirements to achieve your dreams. Kaya sana bebe if magkakaroon ulit ng time or chances na you have to choose, lagi mo piliin kung saan ka mapapabuti at mag bebenefits. Always priority your studies and dreams, put me second, third, and so on kung san man ako mapunta HAHAHA. Palagi lang akong maghihintay at susuporta sayo lablab. Alam ko kasi na kahit hindi moko piliin, the universe always helps me find my way back to you :) 
+        </p>
+
+        <p>
+            Idk if you're going to take it seriously or not, but it's all from my heart, lahat ng sinabi ko ay galing yan sa puso ko. 
+        </p>
+
+        <p>
+            Again, Happy Monthsary ulit satin bebe. Always remember that I love you always in all ways❤️
+        </p>
+
+        <div class="signature">
+            Forever yours,<br>
+            <strong>Baby Ley</strong>
+        </div>
+
+    </div>
+
+</body>
+</html>
